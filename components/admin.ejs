@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECKER 관리자 페이지</title>
+    
+
+<link rel="stylesheet" href="uploads/src/admin/add.css" />
+</head>
+<body>
+      <main>
+
+        <div class="topBox">
+            <div class="left">
+                <p class="home" onclick="location.href='./';">CHECKER</p>
+            </div>
+            <div class="right">
+                <p class="logout" onclick="location.href='/logut';">로그아웃</p>
+            </div>
+            
+          </div>
+
+        <section id="section1">
+            <div class="container">
+                <div class="contentLine">
+                    <div class="text">
+                        <p class="h1">이벤트 추가</p>
+                    </div>
+                    <div class="imgBox">
+                        <div class="imgLine">
+                            <img src="" alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="formLine">
+                        <form id="event-form" enctype="multipart/form-data">
+                            <input type="hidden" name="eventHashFlag" id="eventHashFlag">
+                            <input type="hidden" name="modifyFlag" id="modifyFlag" value="0">
+                            <input type="hidden" name="id" id="event-id" required>
+                            <input type="number" name="num" id="event-num" placeholder="잔여수량 설정" required>
+                            <input type="text" name="name" id="event-name" placeholder="이벤트 명" required>
+                            <label>
+                                이벤트 활성 상태
+                                <input type="checkbox" name="progss" id="event-progress">
+                            </label>
+                            <textarea name="content" id="event-content" placeholder="이벤트 이름" required></textarea>
+                            <input type="datetime-local" name="duedate" id="event-duedate" placeholder="Due Date" required>
+                            <input type="file" name="image" id="event-image" required>
+                            <input type="text" name="studentList" id="event-studentList" placeholder="학생 명단 (,로 구분해주세요)" required>
+                            <button type="button" id="add-option">옵션 추가</button>
+                            <div id="options-container"></div>
+
+                            <div class="submitLine">
+                                <button type="submit" id="submit-btn">이벤트 등록</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <section id="section2">
+            <div class="container">
+                <div class="contentLine">
+                    
+                    <h3 id="event-list-title"> 이벤트 목록 </h3>
+                    <div class="eventFinder">
+                        <input type="text" id="search-bar" placeholder="이벤트 이름을 입력해주세요.">
+                    </div>
+                    <div id="event-list"></div>
+                </div>
+            </div>
+          </section>
+      </main>
+
+    <script src="uploads/src/admin/script.js"></script>
+</body>
+</html>

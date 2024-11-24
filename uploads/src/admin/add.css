@@ -1,0 +1,584 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+@font-face {
+    font-family: 'AJou';
+    src: url(AjouTTF.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    font-family: "Pretendard Variable";
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: white;
+}
+body::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: #2A64AD;
+    border-radius: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ==== floating ==== */
+
+.floating {
+  position: fixed;
+  bottom: 35px;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  z-index: 98;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.floating.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.floating > a > .gotoTop {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 60px;
+    color: black;
+    background: #4c7bba;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.floating > a > .gotoCall {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating > a > .gotoKakao {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: rgb(224, 224, 224);
+}
+
+.floating > a > .gotoUrl {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  background: #a5a5a5;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating > a > .gotoKakao > img {
+  width: 100%;
+}
+
+.floating > a > .gotoCall > img {
+  width: 100%;
+}
+
+.floating > a > .gotoTop > img {
+  width: 20px;
+}
+
+.floating > a > .gotoUrl > img {
+  width: 20px;
+}
+
+/* ==== floating ==== */
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+section {
+    width: 100%;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+section > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+main > .topBox {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #2A64AD;
+  padding: 15px 0;
+  z-index: 9999;
+  transition: all 0.3s;
+  gap: 2rem;
+  justify-content: space-between;
+}
+main > .topBox.sticky {
+    background-color: #2a64add9;
+    padding: 18px 0;
+    backdrop-filter: blur(10px);
+}
+main > .topBox > .left {
+  margin-left: 30px;
+}
+main > .topBox > .left > p {
+  font-family: 'Ajou';
+  color: white;
+  font-size: 25px;
+  margin: 0;
+  cursor: pointer;
+  font-style: italic;
+  transition: all 0.3s;
+}
+main > .topBox > .left > p:hover {
+  color: rgb(130, 184, 238);
+}
+main > .topBox > .right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-right: 30px;
+}
+main > .topBox > .right > p {
+  font-family: 'Pretendard Variable';
+  color: white;
+  font-size: 20px;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main > .topBox > .right > p:hover {
+  color: rgb(130, 184, 238);
+}
+
+/* ==== section1 ==== */
+
+#section1 {
+}
+
+#section1 > .container {
+    padding: 50px 0;
+    padding-top: 130px;
+}
+
+#section1 > .container > .contentLine {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#section1 > .container > .contentLine > .text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+#section1 > .container > .contentLine > .text > p {
+    font-family: "Pretendard-Variable";
+    margin: 0;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#section1 > .container > .contentLine > .imgBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#section1 > .container > .contentLine > .imgBox > .imgLine {
+    width: 500px;
+}
+#section1 > .container > .contentLine > .imgBox > .imgLine > img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgb(141, 140, 140);
+}
+
+#section1 > .container > .contentLine > .formLine {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+#section1 > .container > .contentLine > .formLine > form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border: 1px solid gray;
+  padding: 30px;
+}
+
+#section1 > .container > .contentLine > .formLine > form > input {
+    width: 90%;
+    border: 1px solid rgb(181, 181, 181);
+    height: 30px;
+    border-radius: 10px;
+    font-size: 17px;
+    padding: 10px 15px;
+}
+#section1 > .container > .contentLine > .formLine > form > textarea {
+  width: 90%;
+  border: 1px solid rgb(181, 181, 181);
+  border-radius: 10px;
+  font-size: 17px;
+  padding: 10px 15px;
+}
+#section1 > .container > .contentLine > .formLine > form > .inputBox > input[type='file'] {
+    border: none;
+    font-size: 15px;
+}
+#section1 > .container > .contentLine > .formLine > form > .inputBox > label {
+
+}
+#section1 > .container > .contentLine > .formLine > form > input[type='file']::file-selector-button {
+    width: 80px;
+    height: 30px;
+    border: 1px solid rgb(121, 121, 121);
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.3s;
+    margin-right: 20px;
+    font-size: 13px;
+}
+#section1 > .container > .contentLine > .formLine > form > input[type='file']::file-selector-button:hover {
+    background-color: whitesmoke;
+}
+#section1 > .container > .contentLine > .formLine > form > #options-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#section1 > .container > .contentLine > .formLine > form > #options-container > .option-item {
+  width: 96%;
+  border: 1px solid rgb(181, 181, 181);
+  border-radius: 10px;
+  font-size: 17px;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 25px 0;
+  margin-bottom: 10px;
+}
+
+
+
+#section1 > .container > .contentLine > .formLine > form > #options-container > .option-item > input {
+  width: 80%;
+  border: 1px solid rgb(181, 181, 181);
+  border-radius: 10px;
+  height: 30px;
+  padding: 5px 20px;
+  
+}
+
+#section1 > .container > .contentLine > .formLine > form > #options-container > .option-item > button {
+  width: 100px;
+  border: none;
+  border-radius: 50px;
+  padding: 5px 10px;
+  background-color: #2A64AD;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  align-self: center;
+  font-size: 15px;
+}
+#section1 > .container > .contentLine > .formLine > form > #options-container > .option-item > button:hover {
+  background-color: #154988;
+}
+
+
+#section1 > .container > .contentLine > .formLine > form > .submitLine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#section1 > .container > .contentLine > .formLine > form  > button#add-option {
+  width: 100px;
+  border: none;
+  border-radius: 50px;
+  padding: 5px 10px;
+  background-color: #2A64AD;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  align-self: center;
+  font-size: 15px;
+  margin: -10px 0;
+}
+
+#section1 > .container > .contentLine > .formLine > form  > button#add-option:hover {
+  background-color: #154988;
+}
+
+#section1 > .container > .contentLine > .formLine > form > .submitLine > button {
+  width: 200px;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 20px;
+  background-color: #2A64AD;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 21px;
+}
+#section1 > .container > .contentLine > .formLine > form > .submitLine > button:hover {
+  background-color: #154988;
+}
+/* ==== section1 ==== */
+
+/* ==== section2 ==== */
+
+#section2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#section2 > .container {
+  width: 800px;
+}
+
+#section2 > .container > .contentLine {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#section2 > .container > .contentLine > h3#event-list-title {
+  font-family: "Pretendard-Variable";
+  margin: 0;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+#section2 > .container > .contentLine > .eventFinder {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#section2 > .container > .contentLine > .eventFinder > input {
+  width: 50%;
+  height: 30px;
+  font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+#section2 > .container > .contentLine > #event-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 30px;
+}
+
+#section2 > .container > .contentLine > #event-list > .event-item {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid gray;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+#section2 > .container > .contentLine > #event-list > .event-item > p {
+  margin: 0;
+  font-size: 20px;
+}
+
+#section2 > .container > .contentLine > #event-list > .event-item > .infoLine {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+#section2 > .container > .contentLine > #event-list > .event-item > .infoLine > p {
+  margin: 0;
+  font-size: 20px;
+}
+
+#section2 > .container > .contentLine > #event-list > .event-item > p > img {
+  width: 400px;
+}
+
+#section2 > .container > .contentLine > #event-list > .event-item > .studentList {
+  width: 100%;
+  height: 200px;
+  overflow-y: scroll;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#section2 > .container > .contentLine > #event-list > .event-item > .studentList::-webkit-scrollbar {
+  width: 7px;
+  background-color: white;
+}
+
+#section2 > .container > .contentLine > #event-list > .event-item > .studentList::-webkit-scrollbar-thumb {
+  width: 7px;
+  background-color: #154988;
+  border-radius: 30px;
+}
+
+#section2 > .container > .contentLine > #event-list > .event-item > .studentList > .studentInfo {
+  margin-left: 20px;
+}
+
+#section2 > .container > .contentLine > #event-list > .event-item > .studentList > .studentInfo > p {
+  font-size: 17px;
+  margin: 10px 0;
+}
+
+#section2 > .container > .contentLine > #event-list > .event-item > .studentList > .student {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+#section2 > .container > .contentLine > #event-list > .event-item > .studentList > .student > .hoverInfo {
+  width: 300px;
+  opacity: 0;
+  z-index: -1;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  transition: all 0.3s;
+  user-select: none;
+}
+#section2 > .container > .contentLine > #event-list > .event-item > .studentList > .student:hover > .hoverInfo {
+  opacity: 1;
+  z-index: 99;
+}
+
+#section2 > .container > .contentLine > #event-list > .event-item > .studentList > .student > .hoverInfo > .content {
+  width: 100%;
+}
+#section2 > .container > .contentLine > #event-list > .event-item > .studentList > .student > .hoverInfo > .content > img {
+  width: 100%;
+}
+
+
+
+
+#section2 > .container > .contentLine > #event-list > .event-item > .studentList > .student > .stuInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+#section2 > .container > .contentLine > #event-list > .event-item > .studentList > .student > .stuInfo > input {
+  margin-right: -120px;
+}
+
+#section2 > .container > .contentLine > #event-list > .event-item > button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  background-color: #2b67b0;
+  transition: all 0.3s;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#section2 > .container > .contentLine > #event-list > .event-item > button:hover {
+  background-color: #154988;
+}
+/* ==== section2 ==== */
+
